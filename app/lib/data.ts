@@ -192,8 +192,6 @@ export async function fetchCustomers() {
       ORDER BY name ASC
     `;
 
-    console.log(typeof data);
-
     const customers = data.rows;
     return customers;
   } catch (err) {
